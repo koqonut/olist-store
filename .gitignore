@@ -17,6 +17,7 @@ hs_err_pid*
 
 #ignore csv data files
 *.csv
+!product-service/src/main/resources/data/olist_products_dataset.csv
 
 
 ### Gradle ###
