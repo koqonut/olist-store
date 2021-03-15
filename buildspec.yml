@@ -8,12 +8,12 @@ phases:
     commands:
       - echo Build started on `date`
       - chmod +x ./gradlew
-      - ./gradlew build 
+      - ./gradlew bootJar
   post_build:
     commands:
       - echo $(basename ./build/libs/*.jar)
       - echo Build completed on `date`
-      - mv build/libs/olist-store.jar app.jar
+      - mv product-service/build/libs/product-service-0.0.1-SNAPSHOT.jar app.jar
       - pwd
 artifacts:
   files:
