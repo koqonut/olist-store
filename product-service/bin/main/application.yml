@@ -1,2 +1,5 @@
+server:
+    port: 5000
+
 file:
     path: data/olist_products_dataset.csv
