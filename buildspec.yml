@@ -13,7 +13,7 @@ phases:
     commands:
       - echo $(basename ./build/libs/*.jar)
       - echo Build completed on `date`
-      cp /build/libs/olist-store.jar app.jar
+      - mv build/libs/olist-store.jar app.jar
       - pwd
 artifacts:
   files:
